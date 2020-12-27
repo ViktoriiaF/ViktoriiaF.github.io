@@ -41,6 +41,8 @@ body{
     margin-top: 7px;
 }
 
+
+
 .menu>li{
     float: left;
     width: 25%;
@@ -66,4 +68,47 @@ body{
     color: white;
     background-color: #2c71b8;
 }
+
+.row-sm{
+    width: 270px; 
+    margin-top: 6px;   
+}
+.row-sm>input{
+    background-image: url("images/pngtree-search-icon-image_1344447.jpg");
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: right;
+    display: inline;
+    height: 40px;
+    width: 200px;
+    font-size: 21px;
+    font-weight: 3000;
+    color: #2c71b8;
+    text-align: center;
+    line-height: 50px;
+    background-color: rgba(255,255, 255, 0.2);  
+    border: 1px solid #2c71b8; 
+    
+}
+
+.row-sm>input::placeholder{
+    font-family: 'Roboto', sans-serif;
+    font-size: 21px;
+    font-weight: 3000;
+    color: #2c71b8;
+    text-align: left;
+}
+
+
+.shopping-bag{
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin-left: 30px;
+    background-color: white;
+    float: right;
+    text-align: center;
+    line-height: 40px;
+}
+
 
