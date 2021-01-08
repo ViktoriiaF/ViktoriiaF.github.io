@@ -47,6 +47,7 @@ body{
     float: left;
     width: 25%;
     border-left: 1px solid #2c71b8;
+    position: relative;
 }
 
 .menu>li:last-child{
@@ -64,10 +65,35 @@ body{
     line-height: 50px;
 }
 
+
+
+.menu>li>a::after{
+    display: block;
+        content: '\f107';
+        font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
+        font-weight: 900;
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        right: 10px;
+        top:1px;
+        color:transparent;
+}
+
 .menu>li>a:hover{
     color: white;
     background-color: #2c71b8;
 }
+
+.menu>li>a:hover::after{
+    color: white;
+}
+
+.menu>li:hover > a{
+    background: #2c71b8;
+    color: white;
+}
+
 
  .search{
     
@@ -142,6 +168,33 @@ body{
     left: -10px;
 }
 
+
+.submenu{
+    background-color: #2c71b8;
+    color: white;
+    width: 285px;
+    position: absolute;
+    top:50px;
+    visibility: hidden;
+}
+
+.submenu>ul>li{
+    height: 40px;
+    padding-left: 30px;
+    line-height: 40px;
+    
+    
+    
+}
+
+.submenu>ul>li:hover{
+    color:#2c71b8;
+    background-color: white;
+}
+
+.menu>li>a:hover+.submenu{
+    visibility: visible;
+}
 
 
 
