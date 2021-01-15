@@ -65,9 +65,7 @@ body{
     line-height: 50px;
 }
 
-
-
-.menu>li>a::after{
+.submenu-active::after{
     display: block;
         content: '\f107';
         font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
@@ -77,20 +75,15 @@ body{
         position: absolute;
         right: 10px;
         top:1px;
-        color:transparent;
+        color:#2c71b8;
 }
 
-/* .menu>li>a:hover{
-    color: white;
-    background-color: #2c71b8;
-} */
-/*//////*/
 .menu>li:hover{
     color: white;
     background-color: #2c71b8;
 }
 
-.menu>li>a:hover::after{
+.menu>li:hover .submenu-active::after{
     color: white;
 }
 
@@ -100,15 +93,13 @@ body{
 }
 
 
- .search{
-    
+.search{    
     height: 40px;
     padding: 4px;
     border: 1px solid #2c71b8; 
     margin-top: 5px;
     position: relative;
 }
-
 
 
 .input-search-text{
@@ -134,8 +125,7 @@ body{
     padding-left: 20px;
 }
 
-.input-search-button{
-    
+.input-search-button{    
     width: 30px;
     height: 30px;
     line-height: 50%;
@@ -181,6 +171,8 @@ body{
     position: absolute;
     top:50px;
     left: -1px;
+    z-index: 10;
+    opacity: 0;
     visibility: hidden;
 }
 
@@ -195,14 +187,12 @@ body{
     background-color: white;
 }
 
-.menu>li>a:hover+.submenu{
+
+
+.menu>li:hover .submenu{
+    opacity: 1;
     visibility: visible;
 }
-/*//////*/
-
-/* .menu>li:hover+.submenu{
-    visibility: visible;
-} */
 
 
 .slider{
@@ -308,14 +298,14 @@ body{
 }
 
 .goods-title-inner{
-    width: 270px;
+    
     height: 652px;
     border: 1px solid white;
     margin-top: 50px;
     position: relative;
 }
 .good-photo{
-    width: 270px;
+    
     height: 182px;
     background-color: rgba(255,255, 255, 0.75);
     background-image: url("images/icon\ \(17\).png");
