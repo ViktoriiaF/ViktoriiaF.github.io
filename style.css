@@ -304,13 +304,19 @@ body{
     margin-top: 50px;
     position: relative;
 }
-.good-photo{
-    
+.good-photo{    
     height: 182px;
     background-color: rgba(255,255, 255, 0.75);
-    background-image: url("images/icon\ \(17\).png");
-    background-repeat: no-repeat;
-    background-position: center;
+    position: relative;  
+}
+
+.good-photo>img{
+    position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   margin: auto;
 }
 
 .goods-tile-actions{
@@ -341,11 +347,46 @@ body{
 .device-info{
     margin-top: 12px;
     margin-left: 15px;
-    color:white;    
+    color:white;
+    line-height: 1.2; 
+    font-size: 21px;  
+    font-weight: lighter; 
 }
-
-.device-info>h1{
-    font-size: 30px;
-    font-weight: bold;
+.device-info>*{
     margin-bottom: 15px;
 }
+.device-info>*>span{
+    font-weight: bold;
+}
+.device-info>h1{
+    font-size: 30px;
+    font-weight: bold;    
+}
+
+.device-price{
+    font-size: 48px;
+    font-weight: bold;
+    color:white;
+    text-align: center;
+    margin-bottom: 15px;
+}
+sup{
+    font-size: 24px; 
+    vertical-align:super;
+}
+.btn{
+    width: 210px;
+    height: 50px;
+    background-color: transparent;
+    color: white;
+    font-size: 21px;   
+    border: 1px solid white;
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+
+.btn-add-tu-cart{
+    background-color: rgba(255,255,255,0.20);
+    border: none;
+}
+
