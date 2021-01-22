@@ -336,12 +336,23 @@ body{
     border:1px solid #2c71b8;
 }
 
-.details-button{        
+.zoom-button{        
     background-image: url("images/icon\ \(8\).png");    
 }
+
+.zoom-button:hover{
+    background-image: url("images/icon\ \(6\).png");
+    background-color: #2c71b8;
+}
+
 .wish-button{
     margin-top: 10px;
     background-image: url("images/icon\ \(5\).png");
+}
+
+.wish-button:hover{
+    background-image: url("images/icon\ \(7\).png");
+    background-color: #2c71b8;
 }
 
 .device-info{
