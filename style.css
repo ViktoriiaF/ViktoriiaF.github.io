@@ -527,3 +527,7 @@ input[type="checkbox"] {
     margin-left: 26px;
     margin-bottom: 10px;
 }
+
+.product-quantity>input{
+    text-align: center;
+}
